@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Véloçi — Louez. Roulez. Livrez. | Location de vélos pour livreurs à Abidjan</title>
+<meta name="description" content="Véloçi loue des vélos fiables et accessibles aux livreurs et coursiers d'Abidjan. Louez à la journée, roulez et livrez plus, plus facilement.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%231D0A3D%22/><circle cx=%228.5%22 cy=%2216.5%22 r=%223.2%22 fill=%22none%22 stroke=%22%233EFF1B%22 stroke-width=%222%22/><circle cx=%2216%22 cy=%2216.5%22 r=%223.2%22 fill=%22none%22 stroke=%22%233EFF1B%22 stroke-width=%222%22/><path d=%22M8.5 16.5 11 10l4 3.5h2%22 fill=%22none%22 stroke=%22%233EFF1B%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#3EFF1B;"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
+      Vélo<span class="dot">çi</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="velos.html">Nos vélos</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="fonctionnement.html">Comment ça marche</a>
+      <a href="apropos.html">À propos</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-outline btn-sm" style="color:#fff;">Nous contacter</a>
+      <a href="#" class="btn btn-primary btn-sm" data-wa>Louer un vélo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="nav-scrim" id="navScrim"></div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Location de vélos pour livreurs · Abidjan</span>
+      <h1>Louez. Roulez. <span class="accent">Livrez.</span></h1>
+      <p class="lede">Des vélos fiables et accessibles pour vous permettre de livrer plus, plus facilement et à moindre coût — sans acheter votre propre vélo.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/c/22571993266" class="btn btn-primary" data-wa>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.06-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.75 0-1.3.68-1.94.92-2.2.24-.26.53-.33.7-.33.18 0 .35 0 .5.01.16.01.38-.06.6.46.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.13.29-.26.44-.13.15-.27.34-.39.46-.13.13-.26.27-.11.53.15.26.66 1.09 1.42 1.77.98.87 1.8 1.14 2.06 1.27.26.13.41.11.56-.07.16-.18.65-.76.82-1.02.18-.26.35-.22.59-.13.24.09 1.53.72 1.79.85.26.13.44.2.5.31.06.11.06.65-.16 1.27z"/></svg>
+          Louer un vélo
+        </a>
+        <a href="contact.html" class="btn btn-ghost-dark">Nous contacter</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>50+</strong><span>Vélos en flotte</span></div>
+        <div><strong>100+</strong><span>Livreurs accompagnés</span></div>
+        <div><strong>1 500 F</strong><span>À partir de / jour</span></div>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <svg viewBox="0 0 560 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.55" stroke="#8B5FD9" stroke-width="1.5">
+          <rect x="40" y="220" width="60" height="230" rx="4"/>
+          <rect x="112" y="160" width="50" height="290" rx="4"/>
+          <rect x="176" y="260" width="46" height="190" rx="4"/>
+          <rect x="410" y="190" width="54" height="260" rx="4"/>
+          <rect x="474" y="240" width="46" height="210" rx="4"/>
+          <line x1="56" y1="250" x2="56" y2="250"/>
+        </g>
+        <g stroke="#8B5FD9" stroke-width="1" opacity="0.4">
+          <line x1="52" y1="250" x2="88" y2="250"/><line x1="52" y1="290" x2="88" y2="290"/><line x1="52" y1="330" x2="88" y2="330"/>
+          <line x1="120" y1="190" x2="154" y2="190"/><line x1="120" y1="230" x2="154" y2="230"/><line x1="120" y1="270" x2="154" y2="270"/><line x1="120" y1="310" x2="154" y2="310"/>
+          <line x1="418" y1="220" x2="456" y2="220"/><line x1="418" y1="260" x2="456" y2="260"/><line x1="418" y1="300" x2="456" y2="300"/>
+        </g>
+        <line x1="0" y1="450" x2="560" y2="450" stroke="#8B5FD9" stroke-width="2" opacity="0.5"/>
+        <path d="M20 470 C 140 420, 200 500, 320 440 S 480 400, 545 430" stroke="#3EFF1B" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 14" opacity="0.9"/>
+        <g transform="translate(150,300)">
+          <circle cx="0" cy="120" r="46" stroke="#3EFF1B" stroke-width="6" fill="none"/>
+          <circle cx="170" cy="120" r="46" stroke="#3EFF1B" stroke-width="6" fill="none"/>
+          <path d="M0 120 L58 20 L118 70 L170 120" stroke="#3EFF1B" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M58 20 L84 20" stroke="#3EFF1B" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="58" cy="4" r="10" fill="#3EFF1B"/>
+          <rect x="150" y="60" width="46" height="34" rx="5" fill="#3EFF1B" opacity="0.9"/>
+          <rect x="158" y="66" width="30" height="4" fill="#1D0A3D"/>
+        </g>
+        <g transform="translate(430,120)" opacity="0.9">
+          <rect x="0" y="0" width="66" height="46" rx="8" fill="#3EFF1B"/>
+          <rect x="10" y="12" width="46" height="6" rx="3" fill="#1D0A3D"/>
+          <rect x="10" y="24" width="30" height="6" rx="3" fill="#1D0A3D"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NOS VÉLOS ===================== -->
+<section id="velos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Nos vélos</span>
+      <h2>Des vélos taillés pour la livraison urbaine et pour les balades</h2>
+      <p>Chaque vélo Véloçi est vérifié, entretenu régulièrement et adapté aux trajets  à Abidjan.</p>
+    </div>
+
+    <div class="bike-grid">
+      <div class="bike-card reveal">
+        <div class="bike-visual">
+          <span class="tag">JOURNALIER</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
+        </div>
+        <h3>Vélo Standard</h3>
+        <p class="desc">Robuste et confortable, pensé pour les trajets quotidiens en ville.</p>
+        <ul class="feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Vélo robuste</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Confortable</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Adapté à la livraison</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Entretien régulier</li>
+        </ul>
+        <div class="price-row"><span class="price">1 500 F<span> / jour</span></span></div>
+        <a href="#" class="btn btn-primary btn-block" data-wa data-wa-message="Bonjour Véloçi, je souhaite louer le vélo City. Pouvez-vous me donner plus de détails ?">Louer ce vélo</a>
+      </div>
+
+      <div class="bike-card is-cargo reveal">
+        <div class="bike-visual">
+          <span class="tag">HEBDOMADAIRE</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><rect x="14.5" y="10.5" width="4.5" height="4" rx="0.6"/><path d="M12 17.5V14l-3-3 4-3 2 3"/></svg>
+        </div>
+        <h3>Vélo Classique</h3>
+        <p class="desc">Porte-bagages renforcé pour les grosses commandes et les tournées chargées.</p>
+        <ul class="feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>7 jours consécutifs</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>économisez 1 500F</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>changement de vélo</li>
+          
+        </ul>
+        <div class="price-row"><span class="price">9 000 F<span> / 7jour</span></span></div>
+        <a href="#" class="btn btn-primary btn-block" data-wa data-wa-message="Bonjour Véloçi, je souhaite louer le vélo Cargo. Pouvez-vous me donner plus de détails ?">Louer ce vélo</a>
+      </div>
+
+      <div class="bike-card reveal">
+        <div class="bike-visual">
+          <span class="tag">MENSUEL</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/><path d="M5.5 17.5h5"/></svg>
+        </div>
+        <h3>Vélo Premium</h3>
+        <p class="desc">Notre modèle le plus endurant, conçu pour les livreurs à fort volume.</p>
+        <ul class="feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>30 jours complets</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>priorité réservation</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>maintenace incluse</li>
+          
+        </ul>
+        <div class="price-row"><span class="price">Sur devis<span></span></span></div>
+        <a href="#" class="btn btn-primary btn-block" data-wa data-wa-message="Bonjour Véloçi, je souhaite louer le vélo Pro. Pouvez-vous me donner plus de détails ?">Louer ce vélo</a>
+      </div>
+    </div>
+    <div class="section-foot"><a href="velos.html" class="btn btn-outline" style="color:#3D1373;">Voir tous les vélos</a></div>
+  </div>
+</section>
+
+<!-- ===================== TARIFS TEASER ===================== -->
+<section class="on-mist" id="tarifs">
+  <div class="container">
+    <div class="pricing-wrap">
+      <div class="reveal">
+        <span class="eyebrow">Tarifs</span>
+        <h2 style="font-size:clamp(26px,3.4vw,36px);margin-top:14px;margin-bottom:26px;">Un prix clair, sans surprise</h2>
+        <table class="price-table">
+          <thead><tr><th>Formule</th><th>Prix</th></tr></thead>
+          <tbody>
+            <tr><td>1 jour</td><td>1 500 FCFA</td></tr>
+            <tr><td>7 jours</td><td>À définir</td></tr>
+            <tr><td>30 jours</td><td>À définir</td></tr>
+            <tr><td>Formule partenaire</td><td>Sur devis</td></tr>
+          </tbody>
+        </table>
+        <p class="price-note">Les tarifs peuvent varier selon la durée de location et les conditions du contrat.</p>
+      </div>
+      <div class="pricing-side reveal">
+        <span class="eyebrow">Formule partenaire</span>
+        <h3 style="margin-top:14px;">Une flotte pour votre entreprise</h3>
+        <p>Restaurants, commerces et entreprises de livraison : équipez vos équipes avec une flotte de vélos Véloçi, entretenue et suivie pour vous.</p>
+        <a href="tarifs.html" class="btn btn-primary btn-block">Voir tous les tarifs</a>
+        <a href="https://wa.me/c/22571993266" class="btn btn-ghost-dark btn-block" style="margin-top:12px;" data-wa data-wa-message="Bonjour Véloçi, je souhaite demander une location.">Demander une location</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COMMENT ÇA MARCHE ===================== -->
+<section id="comment-ca-marche">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Comment ça marche</span>
+      <h2>De la demande au premier coup de pédale</h2>
+      <p>Un parcours pensé pour vous mettre en selle rapidement, en 4 étapes.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card reveal"><div class="step-num">1</div><h3>Choisissez votre vélo</h3><p>Consultez les vélos disponibles et leurs caractéristiques.</p></div>
+      <div class="step-card reveal"><div class="step-num">2</div><h3>Contactez Véloçi</h3><p>Envoyez votre demande via WhatsApp ou par téléphone.</p></div>
+      <div class="step-card reveal"><div class="step-num">3</div><h3>Finalisez votre location</h3><p>Présentez les documents nécessaires et effectuez le paiement.</p></div>
+      <div class="step-card reveal"><div class="step-num">4</div><h3>Roulez et livrez</h3><p>Récupérez votre vélo et commencez vos livraisons.</p></div>
+    </div>
+    <div class="section-foot"><a href="fonctionnement.html" class="btn btn-outline" style="color:#3D1373;">Voir le détail du fonctionnement</a></div>
+  </div>
+</section>
+
+<!-- ===================== POURQUOI CHOISIR ===================== -->
+<section class="on-mist" id="avantages">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Pourquoi choisir Véloçi</span>
+      <h2>Une solution pensée pour les livreurs</h2>
+    </div>
+    <div class="perks-grid">
+      <div class="perk-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg></div>
+        <h3>Vélo adapté</h3><p>Des vélos conçus pour les déplacements urbains et la livraison.</p>
+      </div>
+      <div class="perk-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg></div>
+        <h3>Prix accessible</h3><p>Travaillez sans acheter immédiatement votre propre vélo.</p>
+      </div>
+      <div class="perk-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 1 0-5.4 5.4L2 19l3 3 7.3-7.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8Z"/></svg></div>
+        <h3>Entretien</h3><p>Un suivi régulier des vélos pour rouler l'esprit tranquille.</p>
+      </div>
+      <div class="perk-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div>
+        <h3>Assistance</h3><p>Contactez rapidement Véloçi en cas de problème.</p>
+      </div>
+      <div class="perk-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <h3>Gain de temps</h3><p>Commencez rapidement votre activité de livreur.</p>
+      </div>
+      <div class="perk-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+        <h3>Solution professionnelle</h3><p>Adaptée aux livreurs indépendants et aux entreprises.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CHIFFRES ===================== -->
+<div class="stats-band">
+  <div class="container stats-grid">
+    <div class="stat reveal"><strong>50+</strong><span>Vélos</span></div>
+    <div class="stat reveal"><strong>100+</strong><span>Livreurs accompagnés</span></div>
+    <div class="stat reveal"><strong>10 000+</strong><span>Livraisons réalisées</span></div>
+    <div class="stat reveal"><strong>24/7</strong><span>Assistance</span></div>
+  </div>
+</div>
+<p style="text-align:center;font-size:12px;color:var(--ink-soft);padding:14px 24px 0;">Chiffres indicatifs, à remplacer par les données réelles de Véloçi.</p>
+
+<!-- ===================== À PROPOS TEASER ===================== -->
+<section id="apropos">
+  <div class="container about-wrap">
+    <div class="about-visual reveal">
+      <img src="images/image.jpg" alt="À propos de Véloçi - Mobilité urbaine">
+    </div>
+    <div class="about-copy reveal">
+      <span class="eyebrow">À propos de Véloçi</span>
+      <h2 style="font-size:clamp(26px,3.4vw,38px);margin-top:14px;margin-bottom:20px;">Une mobilité pensée pour ceux qui livrent Abidjan</h2>
+      <p><strong>Véloçi est une solution de mobilité dédiée aux livreurs et aux professionnels de la livraison.</strong></p>
+      <p>Notre objectif est de permettre aux livreurs d'accéder facilement à des vélos fiables et adaptés à leurs activités.</p>
+      <p>Véloçi souhaite contribuer au développement d'une livraison plus accessible, économique et écologique à Abidjan.</p>
+      <a href="apropos.html" class="btn btn-outline" style="color:#3D1373;margin-top:10px;">En savoir plus</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA FINAL ===================== -->
+<section class="cta-band">
+  <div class="container">
+    <span class="eyebrow" style="justify-content:center;">Prêt à démarrer ?</span>
+    <h2 style="margin-top:14px;">Réservez votre vélo dès aujourd'hui</h2>
+    <p>Un message sur WhatsApp suffit pour lancer votre location et commencer à livrer.</p>
+    <div class="cta-actions">
+      <a href="https://wa.me/c/22571993266" class="btn btn-primary" data-wa>Louer un vélo sur WhatsApp</a>
+      <a href="contact.html" class="btn btn-ghost-dark">Voir la page contact</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#3EFF1B;"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
+          Vélo<span class="dot">çi</span>
+        </a>
+        <p>Louez. Roulez. Livrez. — Véloçi loue des vélos fiables aux livreurs et coursiers d'Abidjan.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/profile.php?id=100066764412727" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5H16l.5-3.5h-3V7.8c0-1 .3-1.7 1.7-1.7H16.6V3.1C16.3 3 15.3 3 14.2 3c-2.4 0-4 1.5-4 4.2V10H7.7v3.5h2.5V21h3.3Z"/></svg></a>
+          <a href="https://www.tiktok.com/@velo_ci0?_r=1&_t=ZS-98rDesO1K6O" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 3c.3 2 1.8 3.6 4 3.9v2.6c-1.4 0-2.8-.4-4-1.2v6.4A5.3 5.3 0 1 1 9 9.5v2.7a2.7 2.7 0 1 0 2.6 2.7V3Z"/></svg></a>
+          <a href="https://wa.me/c/22571993266" aria-label="WhatsApp" data-wa><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.06-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.75 0-1.3.68-1.94.92-2.2.24-.26.53-.33.7-.33.18 0 .35 0 .5.01.16.01.38-.06.6.46.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.13.29-.26.44-.13.15-.27.34-.39.46-.13.13-.26.27-.11.53.15.26.66 1.09 1.42 1.77.98.87 1.8 1.14 2.06 1.27.26.13.41.11.56-.07.16-.18.65-.76.82-1.02.18-.26.35-.22.59-.13.24.09 1.53.72 1.79.85.26.13.44.2.5.31.06.11.06.65-.16 1.27z"/></svg></a>
+        </div>
+      </div>
+
+
+      <div>
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="velos.html">Nos vélos</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+2250171993266">+225 01 71 99 32 66</a></li>
+          <li><a href="https://wa.me/c/22571993266" data-wa>WhatsApp</a></li>
+          <li><a href="mailto:veloci.ci.app@gmail.com">veloci.ci.app@gmail.com</a></li>
+          <li>Abidjan, Côte d'Ivoire</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Louer un vélo</h5>
+        <p style="font-size:14px;color:rgba(255,255,255,.6);margin-bottom:16px;">Une question ? Écrivez-nous, réponse rapide garantie.</p>
+        <a class="btn btn-primary btn-sm btn-block" data-wa href="https://wa.me/c/22571993266">Écrire sur WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Véloçi. Tous droits réservés.</span>
+      <span>Louez. Roulez. Livrez.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/c/22571993266" class="whatsapp-float" data-wa>
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.06-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.75 0-1.3.68-1.94.92-2.2.24-.26.53-.33.7-.33.18 0 .35 0 .5.01.16.01.38-.06.6.46.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.13.29-.26.44-.13.15-.27.34-.39.46-.13.13-.26.27-.11.53.15.26.66 1.09 1.42 1.77.98.87 1.8 1.14 2.06 1.27.26.13.41.11.56-.07.16-.18.65-.76.82-1.02.18-.26.35-.22.59-.13.24.09 1.53.72 1.79.85.26.13.44.2.5.31.06.11.06.65-.16 1.27z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
