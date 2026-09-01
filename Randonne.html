@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Randonnée — Véloçi | Sortie vélo pour livreurs à Abidjan</title>
+<meta name="description" content="Rejoignez la prochaine randonnée Véloçi à Abidjan : rencontrez d'autres livreurs, testez nos vélos et roulez en groupe en toute sécurité.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%231D0A3D%22/><circle cx=%228.5%22 cy=%2216.5%22 r=%223.2%22 fill=%22none%22 stroke=%22%233EFF1B%22 stroke-width=%222%22/><circle cx=%2216%22 cy=%2216.5%22 r=%223.2%22 fill=%22none%22 stroke=%22%233EFF1B%22 stroke-width=%222%22/><path d=%22M8.5 16.5 11 10l4 3.5h2%22 fill=%22none%22 stroke=%22%233EFF1B%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#3EFF1B;"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
+      Vélo<span class="dot">çi</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Accueil</a>
+      <a href="velos.html">Nos vélos</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="fonctionnement.html">Comment ça marche</a>
+      <a href="randonnee.html" class="active">Randonnée</a>
+      <a href="apropos.html">À propos</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-outline btn-sm" style="color:#fff;">Nous contacter</a>
+      <a href="#" class="btn btn-primary btn-sm" data-wa>Louer un vélo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="nav-scrim" id="navScrim"></div>
+</header>
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Randonnée Véloçi</span>
+    <h1>Roulons ensemble : rejoignez la prochaine randonnée</h1>
+    <p class="lead">Une sortie à vélo conviviale entre livreurs, coursiers et curieux du vélo à Abidjan — pour se rencontrer, tester du matériel et rouler en groupe en toute sécurité.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Infos pratiques</span>
+      <h2>Ce qu'il faut savoir avant de vous inscrire</h2>
+    </div>
+    <div class="contact-info" style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px;">
+      <div class="contact-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+        <div><h4>Date</h4><p>Prochaine date communiquée sur WhatsApp et nos réseaux</p></div>
+      </div>
+      <div class="contact-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><h4>Lieu de rendez-vous</h4><p>Abidjan — précisé après inscription</p></div>
+      </div>
+      <div class="contact-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div><h4>Durée</h4><p>Environ 3 heures, rythme accessible à tous</p></div>
+      </div>
+      <div class="contact-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg></div>
+        <div><h4>Niveau</h4><p>Tous niveaux bienvenus, vélo perso ou loué chez Véloçi</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="on-mist">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Pourquoi participer</span>
+      <h2>Plus qu'une sortie, une communauté</h2>
+    </div>
+    <div class="perks-grid">
+      <div class="perk-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Rencontrez d'autres livreurs</h3><p>Échangez avec des coursiers et livreurs d'Abidjan autour d'une passion commune.</p>
+      </div>
+      <div class="perk-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg></div>
+        <h3>Testez les vélos Véloçi</h3><p>Essayez les modèles City, Cargo et Pro avant de vous décider à en louer un.</p>
+      </div>
+      <div class="perk-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
+        <h3>Parcours sécurisé</h3><p>Une sortie encadrée, à un rythme accessible, sur un itinéraire pensé pour le groupe.</p>
+      </div>
+      <div class="perk-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <h3>Astuces livraison</h3><p>Repartez avec des conseils pratiques pour optimiser vos tournées au quotidien.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Programme</span>
+      <h2>Le déroulé de la journée et de la soirée</h2>
+    </div>
+
+    <div class="program-grid">
+      <div class="program-panel reveal">
+        <h3>Journée</h3>
+        <div class="route on-light">
+          <div class="route-stop" data-stop="1"><h3 style="font-size:16.5px;margin-bottom:4px;">06h30 — Rendez-vous</h3><p style="font-size:14px;color:var(--ink-soft);">Accueil des participants au point de départ.</p></div>
+          <div class="route-stop" data-stop="2"><h3 style="font-size:16.5px;margin-bottom:4px;">06h45 — Vérification & consignes</h3><p style="font-size:14px;color:var(--ink-soft);">Contrôle rapide des vélos et rappel des règles de sécurité.</p></div>
+          <div class="route-stop" data-stop="3"><h3 style="font-size:16.5px;margin-bottom:4px;">07h00 — Départ du groupe</h3><p style="font-size:14px;color:var(--ink-soft);">Départ encadré, à un rythme accessible à tous.</p></div>
+          <div class="route-stop" data-stop="4"><h3 style="font-size:16.5px;margin-bottom:4px;">08h30 — Pause ravitaillement</h3><p style="font-size:14px;color:var(--ink-soft);">Un moment de pause et d'échange en cours de route.</p></div>
+          <div class="route-stop" data-stop="5"><h3 style="font-size:16.5px;margin-bottom:4px;">10h00 — Arrivée & convivialité</h3><p style="font-size:14px;color:var(--ink-soft);">Retour au point de départ, photos et échanges entre participants.</p></div>
+        </div>
+      </div>
+
+      <div class="program-panel reveal">
+        <h3>Soirée</h3>
+        <div class="route on-light">
+          <div class="route-stop" data-stop="1"><h3 style="font-size:16.5px;margin-bottom:4px;">17h30 — Accueil & installation</h3><p style="font-size:14px;color:var(--ink-soft);">Arrivée des participants, petite présentation et mise en route.</p></div>
+          <div class="route-stop" data-stop="2"><h3 style="font-size:16.5px;margin-bottom:4px;">18h00 — Tour de piste & briefing</h3><p style="font-size:14px;color:var(--ink-soft);">Rappel des règles, préparation du parcours et organisation du groupe.</p></div>
+          <div class="route-stop" data-stop="3"><h3 style="font-size:16.5px;margin-bottom:4px;">18h30 — Départ de la sortie</h3><p style="font-size:14px;color:var(--ink-soft);">Balade en groupe avec ambiance conviviale et rythme détendu.</p></div>
+          <div class="route-stop" data-stop="4"><h3 style="font-size:16.5px;margin-bottom:4px;">20h00 — Pause repas & échanges</h3><p style="font-size:14px;color:var(--ink-soft);">Moment de détente, discussions autour du vélo et des projets.</p></div>
+          <div class="route-stop" data-stop="5"><h3 style="font-size:16.5px;margin-bottom:4px;">21h30 — Clôture & photos</h3><p style="font-size:14px;color:var(--ink-soft);">Retour au point de rendez-vous, souvenirs partagés et fin de soirée.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="on-mist">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Photos & vidéos</span>
+      <h2>Un aperçu visuel de la sortie</h2>
+      <p>Utilisez cet espace pour ajouter vos photos et vidéos de la randonnée, vos moments forts, et les meilleurs plans du groupe.</p>
+    </div>
+
+    <div class="media-gallery">
+      <article class="media-card reveal">
+        <div class="media-slot media-photo">
+          <img class="gallery-image" src="images/randonne.jpg.jpeg" alt="Randonnée Véloçi en groupe">
+        </div>
+      </article>
+
+      <article class="media-card reveal">
+        <div class="media-slot media-photo">
+          <img class="gallery-image" src="images/imageRand1jpg.jpeg" alt="Départ de la randonnée Véloçi">
+        </div>
+      </article>
+
+      <article class="media-card reveal">
+        <div class="media-slot media-video">
+          <img class="gallery-image" src="images/imagerande2.jpg" alt="Moment fort de la randonnée Véloçi">
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="on-mist" id="inscription">
+  <div class="container">
+    <div class="section-head reveal" style="margin-left:auto;margin-right:auto;text-align:center;">
+      <span class="eyebrow" style="justify-content:center;">Inscription</span>
+      <h2>Rejoignez la randonnée</h2>
+      <p>Remplissez le formulaire ci-dessous, votre demande s'ouvre directement dans WhatsApp pour confirmation avec Véloçi.</p>
+    </div>
+
+    <div class="form-shell reveal">
+      <aside class="form-side">
+        <span class="eyebrow">Pré-inscription</span>
+        <h3>Votre place est presque réservée</h3>
+        <p>Renseignez vos informations pour recevoir la confirmation et les détails de la prochaine sortie.</p>
+        <ul class="form-benefits">
+          <li>Réponse rapide sur WhatsApp</li>
+          <li>Informations de sécurité et de lieu</li>
+          <li>Possibilité de louer un vélo</li>
+        </ul>
+        <div class="form-mini-card">
+          <strong>À préparer</strong>
+          <span>Vélo personnel ou loué • niveau de pratique • quartier</span>
+        </div>
+      </aside>
+
+      <div class="form-card">
+        <form id="join-ride-form" novalidate>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="r-nom">Nom complet *</label>
+              <input type="text" id="r-nom" name="nom" placeholder="Kouassi Yao" required>
+            </div>
+            <div class="form-field">
+              <label for="r-telephone">Téléphone *</label>
+              <input type="tel" id="r-telephone" name="telephone" placeholder="+225 XX XX XX XX XX" required>
+            </div>
+            <div class="form-field">
+              <label for="r-whatsapp">WhatsApp</label>
+              <input type="tel" id="r-whatsapp" name="whatsapp" placeholder="+225 XX XX XX XX XX">
+            </div>
+            <div class="form-field">
+              <label for="r-quartier">Quartier</label>
+              <input type="text" id="r-quartier" name="quartier" placeholder="Cocody, Yopougon...">
+            </div>
+            <div class="form-field">
+              <label for="r-velo">Vous avez un vélo ?</label>
+              <select id="r-velo" name="velo">
+                <option value="">Sélectionner</option>
+                <option value="J'ai déjà mon vélo">J'ai déjà mon vélo</option>
+                <option value="Je souhaite louer un vélo Véloçi pour l'occasion">Je souhaite louer un vélo Véloçi pour l'occasion</option>
+                <option value="Je ne sais pas encore">Je ne sais pas encore</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="r-niveau">Niveau</label>
+              <select id="r-niveau" name="niveau">
+                <option value="">Sélectionner</option>
+                <option value="Débutant">Débutant</option>
+                <option value="Intermédiaire">Intermédiaire</option>
+                <option value="Confirmé">Confirmé</option>
+              </select>
+            </div>
+            <div class="form-field full">
+              <label for="r-message">Message</label>
+              <textarea id="r-message" name="message" placeholder="Une question, une précision ?"></textarea>
+            </div>
+          </div>
+          <div class="form-submit-row">
+            <button type="button" class="btn btn-primary btn-block" onclick="window.open('https://chat.whatsapp.com/F8M9pqvyzRJFDJdYBHF2aB?s=cl&p=a&mlu=4', '_blank', 'noopener');">Rejoindre la randonnée</button>
+          </div>
+          <p class="form-note">Cliquez pour rejoindre directement le groupe WhatsApp de la randonnée Véloçi.</p>
+          <div class="form-success" id="join-ride-success"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Une question avant de vous inscrire ?</h2>
+    <p>Écrivez-nous directement sur WhatsApp, nous répondons rapidement.</p>
+    <div class="cta-actions">
+      <a href="#" class="btn btn-primary" data-wa data-wa-message="Bonjour Véloçi, j'ai une question sur la prochaine randonnée.">Nous écrire sur WhatsApp</a>
+      <a href="#inscription" class="btn btn-ghost-dark">Voir le formulaire</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#3EFF1B;"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
+          Vélo<span class="dot">çi</span>
+        </a>
+        <p>Louez. Roulez. Livrez. — Véloçi loue des vélos fiables aux livreurs et coursiers d'Abidjan.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/profile.php?id=100066764412727" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5H16l.5-3.5h-3V7.8c0-1 .3-1.7 1.7-1.7H16.6V3.1C16.3 3 15.3 3 14.2 3c-2.4 0-4 1.5-4 4.2V10H7.7v3.5h2.5V21h3.3Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.3" cy="6.7" r="1"/></svg></a>
+          <a href="https://www.tiktok.com/@velo_ci0" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 3c.3 2 1.8 3.6 4 3.9v2.6c-1.4 0-2.8-.4-4-1.2v6.4A5.3 5.3 0 1 1 9 9.5v2.7a2.7 2.7 0 1 0 2.6 2.7V3Z"/></svg></a>
+          <a href="#" aria-label="WhatsApp" data-wa><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.06-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.75 0-1.3.68-1.94.92-2.2.24-.26.53-.33.7-.33.18 0 .35 0 .5.01.16.01.38-.06.6.46.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.13.29-.26.44-.13.15-.27.34-.39.46-.13.13-.26.27-.11.53.15.26.66 1.09 1.42 1.77.98.87 1.8 1.14 2.06 1.27.26.13.41.11.56-.07.16-.18.65-.76.82-1.02.18-.26.35-.22.59-.13.24.09 1.53.72 1.79.85.26.13.44.2.5.31.06.11.06.65-.16 1.27z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="velos.html">Nos vélos</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="randonnee.html">Randonnée</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+2250171993266">+225 01 71 99 32 66</a></li>
+          <li><a href="https://wa.me/c/22571993266" data-wa>WhatsApp</a></li>
+          <li><a href="mailto:veloci.ci.app@gmail.com">veloci.ci.app@gmail.com</a></li>
+          <li>Abidjan, Côte d'Ivoire</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Louer un vélo</h5>
+        <p style="font-size:14px;color:rgba(255,255,255,.6);margin-bottom:16px;">Une question ? Écrivez-nous, réponse rapide garantie.</p>
+        <a class="btn btn-primary btn-sm btn-block" data-wa href="https://wa.me/c/22571993266">Écrire sur WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Véloçi. Tous droits réservés.</span>
+      <span>Louez. Roulez. Livrez.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/c/22571993266" class="whatsapp-float" data-wa>
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.06-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.75 0-1.3.68-1.94.92-2.2.24-.26.53-.33.7-.33.18 0 .35 0 .5.01.16.01.38-.06.6.46.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.13.29-.26.44-.13.15-.27.34-.39.46-.13.13-.26.27-.11.53.15.26.66 1.09 1.42 1.77.98.87 1.8 1.14 2.06 1.27.26.13.41.11.56-.07.16-.18.65-.76.82-1.02.18-.26.35-.22.59-.13.24.09 1.53.72 1.79.85.26.13.44.2.5.31.06.11.06.65-.16 1.27z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
