@@ -35,6 +35,55 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+
+@keyframes heroFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFloatIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes heroFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(4px); }
+}
+
+.hero-copy {
+  animation: heroFadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero .lede {
+  animation: heroFadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+
+.hero-actions { animation: heroFadeInUp 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both; }
+.hero-meta { animation: heroFadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both; }
+
+.hero-art {
+  animation: heroFloatIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+
+.hero-art svg {
+  animation: heroFloat 5.5s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
@@ -105,8 +154,16 @@ section.on-dark .eyebrow::before,
   padding: 15px 26px;
   border-radius: 999px;
   border: 2px solid transparent;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, color 0.18s ease, border-color .18s ease;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, color 0.18s ease, border-color .18s ease, filter .18s ease;
   white-space: nowrap;
+  will-change: transform, box-shadow;
+}
+.btn:hover {
+  transform: translateY(-2px) scale(1.01);
+  filter: brightness(1.02);
+}
+.btn:active {
+  transform: translateY(0) scale(0.985);
 }
 .btn:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; }
 .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
@@ -163,21 +220,45 @@ section.on-dark .eyebrow::before,
   font-weight: 500;
   color: rgba(255,255,255,0.82);
   position: relative;
-  padding: 6px 0;
-  transition: color .18s ease;
+  padding: 8px 10px;
+  border-radius: 999px;
+  transition: color .18s ease, background-color .18s ease, transform .18s ease, box-shadow .18s ease;
+  will-change: transform;
 }
-.nav-links a:hover, .nav-links a.active { color: var(--white); }
+.nav-links a:hover,
+.nav-links a:focus-visible,
+.nav-links a.active {
+  color: var(--white);
+  background: rgba(255,255,255,0.06);
+  transform: translateY(-1px);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06);
+}
+.nav-links a:active {
+  transform: translateY(0) scale(0.98);
+}
 .nav-links a.active::after {
   content: "";
-  position: absolute; left: 0; right: 0; bottom: -2px;
+  position: absolute; left: 12px; right: 12px; bottom: 4px;
   height: 2px; background: var(--green); border-radius: 2px;
 }
 .nav-cta { display: flex; align-items: center; gap: 12px; }
+.nav-cta .btn {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+}
 .nav-toggle {
   display: none;
   background: transparent; border: none; color: var(--white);
   width: 40px; height: 40px; align-items: center; justify-content: center;
+  border-radius: 50%;
+  transition: transform .18s ease, background-color .18s ease, box-shadow .18s ease;
 }
+.nav-toggle:hover,
+.nav-toggle:focus-visible {
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(62,255,27,0.18);
+}
+.nav-toggle:active { transform: translateY(0) scale(0.97); }
 .nav-toggle svg { width: 24px; height: 24px; }
 
 @media (max-width: 920px) {
@@ -235,6 +316,9 @@ section.on-dark .eyebrow::before,
   align-items: center;
   padding-bottom: 70px;
 }
+.hero-copy {
+  animation: heroFadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
 .hero-copy .eyebrow { margin-bottom: 20px; }
 .hero h1 {
   font-size: clamp(40px, 6vw, 68px);
@@ -247,15 +331,24 @@ section.on-dark .eyebrow::before,
   line-height: 1.65;
   color: rgba(255,255,255,0.82);
   max-width: 500px;
+  animation: heroFadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
 }
-.hero-actions { display: flex; gap: 14px; margin-top: 34px; flex-wrap: wrap; }
-.hero-meta { display: flex; gap: 28px; margin-top: 46px; flex-wrap: wrap; }
+.hero-actions { display: flex; gap: 14px; margin-top: 34px; flex-wrap: wrap; animation: heroFadeInUp 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both; }
+.hero-meta { display: flex; gap: 28px; margin-top: 46px; flex-wrap: wrap; animation: heroFadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both; }
 .hero-meta div { display: flex; flex-direction: column; gap: 2px; }
 .hero-meta strong { font-family: var(--font-display); font-size: 22px; color: var(--green); }
 .hero-meta span { font-size: 12.5px; color: rgba(255,255,255,0.62); }
 
-.hero-art { position: relative; }
-.hero-art svg { width: 100%; height: auto; }
+.hero-art {
+  position: relative;
+  animation: heroFloatIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+.hero-art svg {
+  width: 100%;
+  height: auto;
+  animation: heroFloat 5.5s ease-in-out infinite alternate;
+  transform-origin: center;
+}
 
 /* ---------------- Route de livraison (élément signature) ----------------
    Un fil pointillé qui relie les étapes/sections comme un itinéraire coursier. */
@@ -519,6 +612,11 @@ section { padding: 96px 0; }
 .reveal.in { opacity: 1; transform: translateY(0); }
 
 /* ---------------- Responsive ---------------- */
+@media (max-width: 1200px) {
+  .container { padding: 0 20px; }
+  .hero-grid { gap: 28px; }
+}
+
 @media (max-width: 1020px) {
   .hero-grid { grid-template-columns: 1fr; }
   .hero-art { order: -1; max-width: 420px; margin: 0 auto; }
@@ -528,22 +626,70 @@ section { padding: 96px 0; }
   .about-visual { max-width: 380px; margin: 0 auto; aspect-ratio: 1/1; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .nav-links { gap: 18px; }
 }
-@media (max-width: 640px) {
-  section { padding: 68px 0; }
-  .bike-grid, .perks-grid, .steps-grid { grid-template-columns: 1fr; }
+
+@media (max-width: 760px) {
+  section { padding: 72px 0; }
+  .container { padding: 0 16px; }
+  .brand { font-size: 18px; }
+  .nav { padding: 14px 0; }
+  .nav .container { gap: 12px; }
+  .nav-cta .btn-outline { display: none; }
+  .nav-cta .btn-primary { display: none; }
+  .nav-toggle { display: inline-flex; }
+  .hero { padding-top: 126px; }
+  .hero h1 { font-size: clamp(32px, 8vw, 48px); }
+  .hero .lede { font-size: 16px; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn, .cta-actions .btn { width: 100%; }
+  .hero-meta { flex-direction: column; gap: 18px; margin-top: 32px; }
+  .bike-grid, .perks-grid, .steps-grid, .stats-grid, .values-list { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
   .form-card { padding: 24px; }
+  .pricing-side { padding: 24px; }
   .footer-grid { grid-template-columns: 1fr; gap: 30px; }
-  .hero { padding-top: 130px; }
-  .page-hero { padding: 130px 0 60px; }
-  .whatsapp-float span { display: none; }
-  .whatsapp-float { padding: 14px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+  .page-hero { padding: 126px 0 58px; }
+  .page-hero h1 { font-size: clamp(30px, 8vw, 44px); }
+  .page-hero p.lead { font-size: 16px; }
   .route { padding-left: 38px; }
   .route-stop::before { left: -38px; }
+  .whatsapp-float span { display: none; }
+  .whatsapp-float { padding: 12px; right: 14px; bottom: 14px; }
 }
 
+@media (max-width: 560px) {
+  .nav .brand { max-width: 100%; }
+  .section-head h2 { font-size: clamp(26px, 7vw, 32px); }
+  .section-head p { font-size: 15px; }
+  .bike-card > * { padding-left: 18px; padding-right: 18px; }
+  .bike-card h3,
+  .bike-card .desc,
+  .bike-card .feats,
+  .bike-card .price-row,
+  .bike-card .btn {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .bike-card .btn { margin-top: 16px; }
+  .bike-card .price { font-size: 20px; }
+  .contact-card { padding: 16px 18px; }
+  .contact-card p, .contact-card a { font-size: 14px; }
+  .price-table th, .price-table td { padding: 12px 10px; font-size: 12.5px; }
+  .form-card { padding: 18px 16px; }
+  .cta-band { padding: 72px 0; }
+  .cta-band h2 { font-size: clamp(26px, 7vw, 34px); }
+  .about-copy p { font-size: 15px; }
+}
 
-
-
-
+@media (max-width: 420px) {
+  .brand { font-size: 16px; }
+  .btn { padding: 12px 18px; font-size: 14px; }
+  .hero h1 { font-size: clamp(28px, 9vw, 38px); }
+  .hero .lede { font-size: 15px; }
+  .hero-meta strong { font-size: 18px; }
+  .hero-meta span { font-size: 11px; }
+  .section-head h2 { font-size: 24px; }
+  .page-hero h1 { font-size: 28px; }
+}
