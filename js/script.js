@@ -232,7 +232,17 @@
     });
   }
 
+  function registerServiceWorker() {
+    if (!("serviceWorker" in navigator)) return;
+
+    navigator.serviceWorker.register("./service-worker.js")
+      .catch(function (error) {
+        console.error("Impossible d’enregistrer le service worker Véloçi.", error);
+      });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
+    registerServiceWorker();
     initWhatsappLinks();
     initRentalRequest();
     initNav();
