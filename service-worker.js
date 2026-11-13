@@ -1,6 +1,6 @@
 "use strict";
 
-var CACHE_NAME = "veloci-pwa-v1";
+var CACHE_NAME = "veloci-pwa-v5";
 var CACHE_PREFIX = "veloci-pwa-";
 var OFFLINE_URL = "./offline.html";
 var APP_SHELL = [
@@ -13,11 +13,11 @@ var APP_SHELL = [
   "./faq.html",
   "./contact.html",
   OFFLINE_URL,
-  "./manifest.webmanifest",
+  "./manifest.webmanifest?v=4",
   "./css/style.css",
   "./js/script.js",
-  "./images/icon-192.png",
-  "./images/icon-512.png",
+  "./images/icon-192.png?v=4",
+  "./images/icon-512.png?v=4",
   "./images/0image.jpg",
   "./images/image.jpg",
   "./images/imageRand1jpg.jpeg",
