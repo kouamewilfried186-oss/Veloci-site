@@ -933,6 +933,18 @@ section { padding: 96px 0; }
 .rental-dialog-close { border: 0; border-radius: 50%; width: 40px; height: 40px; flex: 0 0 40px; background: var(--mist); color: var(--ink); font-size: 28px; line-height: 1; }
 .rental-dialog .form-field input[readonly] { color: var(--ink-soft); }
 .rental-dialog .form-note { line-height: 1.5; }
+.rental-dialog [hidden] { display: none; }
+.rental-estimate {
+  margin: 0 0 18px;
+  padding: 14px 16px;
+  border: 1px solid rgba(44,203,14,0.4);
+  border-radius: var(--radius-sm);
+  background: rgba(62,255,27,0.12);
+  color: var(--green-ink);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+}
 @media (max-width: 600px) {
   .rental-dialog { padding: 22px 18px; }
   .rental-dialog .form-grid { grid-template-columns: 1fr; gap: 0; }
